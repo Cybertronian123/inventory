@@ -25,5 +25,6 @@ include(
     'redis.py',
     'jwt.py',
     'drf.py',
+    'logging.py',
 
 )

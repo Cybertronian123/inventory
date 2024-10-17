@@ -13,6 +13,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third-party apps
+    'rest_framework',  # Django REST Framework
+    'rest_framework_simplejwt',  # Simple JWT for JWT Authentication
+    'django_redis',  # Redis integration
+
+    # Your custom apps
+    'inventory.items', # Inventory app for CRUD operations
+    'inventory.user',  # User app for User Creation
 ]
 
 MIDDLEWARE = [
