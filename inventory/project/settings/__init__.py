@@ -22,4 +22,8 @@ include(
     optional(LOCAL_SETTINGS_PATH),
     'envvars.py',
     'docker.py',
+    'redis.py',
+    'jwt.py',
+    'drf.py',
+
 )
