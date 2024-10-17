@@ -136,6 +136,10 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+settings.json
 
 #Virtual Environments
 venv/
+
+# Local Env Vars
+local/

@@ -42,6 +42,11 @@ This is a backend API built using Django Rest Framework (DRF) for an Inventory M
    make install
    ```
 
+   ```bash
+   mkdir local & \
+   cp inventory/project/settings/templates/settings.dev.py ./local/settings.dev.py
+   ```
+
 3. Configure PostgreSQL database settings in `project/settings/base.py` under `DATABASES`.
 
 4. Run migrations:
