@@ -28,6 +28,7 @@ def read_item(request, item_id):
     # Check Redis cache first
     item = cache.get(f'item_{item_id}')
     if not item:
+        print("DATABASE CALLED")
         item = get_object_or_404(Item, id=item_id)
         cache.set(f'item_{item_id}', item)  # Cache item
         logger.info(f"Item cached: {item.name}")
@@ -53,4 +54,4 @@ def delete_item(request, item_id):
     item.delete()
     cache.delete(f'item_{item_id}')  # Clear cache
     logger.info(f"Item deleted: {item.name}")
-    return Response({"message": "Item deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
+    return Response({"message": "Item deleted successfully"}, status=status.HTTP_200_OK)

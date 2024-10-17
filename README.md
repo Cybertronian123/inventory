@@ -22,7 +22,7 @@ This is a backend API built using Django Rest Framework (DRF) for an Inventory M
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/inventory-api.git
+   git clone https://github.com/Cybertronian123/inventory.git
    ```
 
 2. Install dependencies:
@@ -47,7 +47,7 @@ This is a backend API built using Django Rest Framework (DRF) for an Inventory M
    cp inventory/project/settings/templates/settings.dev.py ./local/settings.dev.py
    ```
 
-3. Configure PostgreSQL database settings in `project/settings/base.py` under `DATABASES`.
+3. Configure PostgreSQL database settings in `project/settings/base.py` under `DATABASES`. Configure Redis settings under redis.py
 
 4. Run migrations:
    ```bash
