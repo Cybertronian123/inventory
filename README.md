@@ -224,7 +224,7 @@ These endpoints allow you to perform CRUD operations on inventory items. All `it
 - Unit tests for the API are included to ensure functionality and error handling.
 - To run the tests:
    ```bash
-   python manage.py test
+   make test
    ```
 
 ### Logging

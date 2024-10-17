@@ -6,6 +6,9 @@ runserver:
 install:
 	poetry install
 
+.PHONY: test
+	poetry run python -m inventory.manage test
+
 .PHONY: migrate
 migrate: 
 	poetry run python -m inventory.manage migrate
