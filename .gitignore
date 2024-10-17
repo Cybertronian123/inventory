@@ -143,3 +143,6 @@ venv/
 
 # Local Env Vars
 local/
+
+# Poetry lock files
+poetry.lock
